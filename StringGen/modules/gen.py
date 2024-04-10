@@ -231,7 +231,7 @@ async def gen_session(
                 link_preview=False,
                 parse_mode="html",
             )
-            await client(JoinChannelRequest("@kissu123456"))
+            await client(JoinChannelRequest("@pwlived"))
         else:
             string_session = await client.export_session_string()
             await client.send_message(
@@ -239,7 +239,7 @@ async def gen_session(
                 txt.format(ty, string_session, SUPPORT_CHAT),
                 disable_web_page_preview=True,
             )
-            await client.join_chat("FallenAssociation")
+            await client.join_chat("kissuXbots")
     except KeyError:
         pass
     try:
